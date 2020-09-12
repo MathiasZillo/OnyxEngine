@@ -103,7 +103,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Development\Zillo Games\git\OnyxEngine\OnyxEngine\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Development\Zillo Games\git\OnyxEngine\OnyxEngine\TestSystem;D:\Development\Zillo Games\git\OnyxEngine\OnyxEngine\ECS;D:\Development\Zillo Games\git\OnyxEngine\OnyxEngine\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,7 +134,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Development\Zillo Games\git\OnyxEngine\OnyxEngine\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Development\Zillo Games\git\OnyxEngine\OnyxEngine\TestSystem;D:\Development\Zillo Games\git\OnyxEngine\OnyxEngine\ECS;D:\Development\Zillo Games\git\OnyxEngine\OnyxEngine\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,8 +144,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ECS\ECS.vcxproj">
+      <Project>{03253dfa-8db1-40ce-acf2-25dd95b34104}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\Engine\Engine.vcxproj">
       <Project>{938e6d7d-634f-455e-ba6b-b44878d964bf}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\TestSystem\TestSystem.vcxproj">
+      <Project>{05cf98c6-359e-49c3-8d72-a781069e49a3}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
